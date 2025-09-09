@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Soft DRC App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Soft DRC</h1>
+    </header>
+
+    <main>
+        <input type="file" id="imageInput" accept="image/*" capture="environment" />
+        <div class="buttons">
+            <button id="scanBtn">?? Prendre une photo / Scanner le texte</button>
+        </div>
+
+        <div id="loader" class="hidden">
+            <div class="loader-bar"></div>
+            <p>Extraction en cours...</p>
+        </div>
+
+        <section>
+            <h2>Texte détecté :</h2>
+            <pre id="output"></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>Soft DRC - Self made by X</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2/dist/tesseract.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

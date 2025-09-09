@@ -1,0 +1,104 @@
+/* Reset simple */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #222;
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: #2c3e50;
+  letter-spacing: 2px;
+  user-select: none;
+}
+
+main {
+  flex-grow: 1;
+}
+
+input[type="file"] {
+  margin: 20px auto;
+  display: block;
+  cursor: pointer;
+}
+
+.buttons {
+  margin-bottom: 20px;
+}
+
+button#scanBtn {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.5);
+}
+
+button#scanBtn:hover {
+  background: #2980b9;
+}
+
+#loader {
+  margin: 20px auto 40px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.loader-bar {
+  height: 8px;
+  width: 0%;
+  background: linear-gradient(90deg, #3498db, #2980b9);
+  border-radius: 8px;
+  transition: width 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.hidden {display: none !important;
+}
+
+section {
+  max-width: 600px;
+  margin: 0 auto 60px;
+  background: white;
+  border-radius: 10px;
+  padding: 20px 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: left;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  min-height: 200px;
+  user-select: text;
+}
+
+footer {
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 12px 0;
+  user-select: none;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  box-shadow: 0 -3px 10px rgba(0,0,0,0.2);
+}
